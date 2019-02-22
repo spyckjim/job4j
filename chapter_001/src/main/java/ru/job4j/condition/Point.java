@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 /**
  * Расстояние между двумя точками
- * @author spyckjim (spyckjim@gmail.ru)
+ * @author spyckjim (spyckjim@gmail.com)
  * @version 1.0
  * @since 22.02.2019
  */
