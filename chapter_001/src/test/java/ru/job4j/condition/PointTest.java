@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.Test;
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -17,11 +17,9 @@ public class PointTest {
      * test distance
      */
     @Test
-    public void DistanceToPoint() {
-        Point a = new Point(0, 1);
-        Point b = new Point(2, 5);
-       double result = a.distanceTo(b);
-       double expect = 4.47213595499958;
-        assertThat(result, is(expect));
+    public void whenZeroAndTenThenTen() {
+        Point point = new Point();
+        double result = point.distance(0, 0, 0, 10);
+        assertThat(result, is(10D));
     }
 }
