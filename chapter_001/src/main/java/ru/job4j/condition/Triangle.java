@@ -48,6 +48,6 @@ public class Triangle {
      * @return результат
      */
     private boolean exist(double a, double c, double b) {
-        return (a < (c + b) || c < (a + b) || b < (a + c));
+        return (a < (c + b) && c < (a + b) && b < (a + c));
     }
 }
