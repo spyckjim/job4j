@@ -17,6 +17,7 @@ public class MatrixCheck {
         for (int i = 0; i < length - 1; i++) {
             if (data[i][i] != data[i + 1][i + 1] || data[i][length - 1 - i] != data[i + 1][length - 2 - i]) {
                 result = false;
+                break;
             }
         }
         return result;
